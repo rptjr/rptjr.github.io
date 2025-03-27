@@ -1,0 +1,108 @@
+/*turnerStyles.css*/
+header {
+    width: 90%;
+    height: 120px;
+    background-color: #5976f8;
+    top: 0;
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+
+h1 {
+    color: lavender;
+}
+
+h1:first-of-type{
+    display: block;
+    padding: 10px 0 0 0;
+    margin: 0 auto 0;
+    text-align: center;
+    font-family: Lucida Handwriting;
+}
+
+h1:last-of-type{
+    display: block;
+    padding: 0 0 10px 0;
+    margin: 0 auto 0;
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 50px;
+}
+
+body {
+    width: 100%;
+    background-color: lavender;
+}
+
+#image {
+    display: block;
+    max-width: 30%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+    margin: 10px auto 30px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #5976f8;
+    max-width: 40%;
+}
+#obit, p { 
+    font-family: Verdana;
+    font-style: italic;
+    Margin: 0 auto 20px;
+    width: 80%;
+    text-indent: 2em;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+
+  footer {
+    width: 90%;
+    height: fit-content;
+    background-color: #5976f8;
+    color: lavender;
+    margin-inline: 0 0 5px;
+    top: 0;
+    padding: 20px 0 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  footer a {
+    color: gold;
+  }
+
+  footer a:hover {
+    color: #daaad9;
+  }
