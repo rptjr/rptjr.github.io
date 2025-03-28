@@ -1,8 +1,10 @@
 /*turnerStyles.css*/
 header {
     width: 90%;
-    height: 120px;
     background-color: #5976f8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     top: 0;
     margin: 10px auto;
     border-radius: 10px;
