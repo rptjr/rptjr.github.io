@@ -3,7 +3,7 @@ body {
     height: 100vh;
     margin: 0;
     background-size: cover;
-    background-image: url("construction.jpg");
+    background-image: url("Construction.jpg");
     background-color: rgba(222, 222, 222, 0.7); /* Semi-transparent black overlay */
     background-blend-mode: overlay; /* Blends image with color */
   }
