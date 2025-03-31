@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--MySurvey-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guest Survey</title>
+    <link rel="stylesheet" href="SurveyStyles.css" />
+  </head>
+  <body>
+    <h1 id="title">Guest Survey</h1>
+    <p id="description">Please tell us about your stay!</p>
+	<div class="survey">
+  <form id="survey-form">
+<!--Personal information-->
+    <fieldset>
+      <legend>Contact info</legend>
+			<div class="p-info">
+			<label for="name" id="name-label">Please enter your first and last name:<br /><input id="name" name="name" type="text" required placeholder="First and Last" /></label>
+      </div>
+      <div class="p-info">
+			<label for="email" id="email-label">Please enter your email address:<br /><input id="email" name="email" type="email" required placeholder="john@email.com" /></label>
+      </div>
+       <div class="p-info">
+			<label for="number" id="number-label">Please enter your phone number:<br /><input id="number" name="number" type="number" min="10" max="12" required placeholder="123-456-7891" /></label>
+      </div>
+    </fieldset>
+<!--Radio buttons for directions, check-in and cleanliness-->
+<fieldset>
+  <legend>Check-in</legend>
+    <div class="check-in">
+      <p>Were the directions to the property easy to follow?<br /></p>
+      <label for="yes"><input id="yes" type="radio" name="directions" class="check-in" checked value="yes" /> Yes  <input id="no" type="radio" name="directions" class="check-in" value="no" /> No</label>
+    </div>
+    <div class="check-in">
+      <p>Was your check-in experience easy or difficult?<br /></p>
+      <label for="easy"><input id="easy" type="radio" name="experience" class="check-in" value="easy" checked /> Easy  <input id="difficult" type="radio" name="experience" class="check-in" value="difficult" /> Difficult</label>
+    </div>
+   <div class="check-in">
+      <p>Was the room clean?</p>
+      <label for="Yes"><input id="Yes" type="radio" name="clean" class="check-in" checked value="yes" /> Yes  <input id="no" type="radio" name="clean" class="check-in" value="no" /> No</label>
+   </div>
+</fieldset>
+<!--Check attractions-->
+    <fieldset>
+			<legend>Reason for visit</legend>
+			  <label for="reason">What local attraction(s) prompted your visit (Check all that apply)?<br />
+<input type="checkbox" id="reason" name="reason" value="rafting" /> Rafting
+          <input type="checkbox" id="reason" name="reason" value="hiking" /> Hiking
+          <input type="checkbox" id="reason" name="reason" value="bicycling" /> Bicycling
+          <input type="checkbox" id="reason" name="reason" value="archetectural-tour" /> Archetectural Tour
+          <input type="checkbox" id="reason" name="reason" value="historical-site" /> Historical Site
+          <input type="checkbox" id="reason" name="reason" value="l-event" /> Local Event
+          <input type="checkbox" id="reason" name="reason" value="p-event" /> Private Event
+          <input type="checkbox" id="reason" name="reason" value="other" /> Other
+        </label>
+    </fieldset>
+<!--Select referrer-->
+		<fieldset>
+      <legend>Referrer</legend>
+      <div class="refer>"
+        <label for="referrer">How did you hear about us?<br />
+				  <select id="dropdown" name="referrer" class="refer">
+						<option value="">(select one)</option>
+						<option value="1">Airbnb</option>
+						<option value="2">Referral</option>
+						<option value="3">Returning guest</option>
+						<option value="4">Other</option>
+				  </select>
+        </label>
+      </div>
+     </fieldset>
+<!--input text-->
+    <fieldset>
+			<legend>Food</legend>
+			<label for="food">What was your favorite local restaurant? <br /><input id="food" name="food" type="text" /></label>
+    </fieldset>
+<!--textarea-->
+    <fieldset>
+			<label for="bio">Please tell us what you enjoyed most and least about your stay.
+          <input type="textarea" id="bio" name="bio" rows="3" cols="30" placeholder="I enjoyed..."></textarea>
+        </label>
+    </fieldset>
+    <input class="submit" type="submit" value="Submit" id="submit" />
+  </form>
+	</div>
+</body>
+</html>
