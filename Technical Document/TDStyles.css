@@ -1,0 +1,59 @@
+/**Cert Project - Technical Document Design**/
+HTML, body {
+    padding: 10px;
+    background-color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav {
+    display: block;
+    padding: 10px;
+    margin: 5px;;
+}
+
+#navbar header {
+    padding: 10px 0;
+    font-size: 120%;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100%;
+    border-right: 2px solid #00205b;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    border-top: 1px SOLID #00205b;
+    color: black;
+    
+}
+
+main {
+    position: absolute;
+    margin-left: 250px;
+    padding: 0px;
+}
+
+#main-doc header {
+    font-size: 150%;
+}
+
+code {
+    padding: 3px;
+    background-color: #d5deef;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 180px
+    }
+
+    main {
+        margin-left: 190px;
+    }
+}
