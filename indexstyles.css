@@ -138,21 +138,165 @@ main {
     color: #0077B5; /* LinkedIn blue, adjust per platform */
 }
 
-@media only screen and (max-width: 767px) {
+/* Medium screens: Laptops and tablets (768px–1199px) */
+@media screen and (max-width: 1199px) {
     header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 10vh; /* Slightly taller for mobile */
-      background-color: #333;
-      color: aliceblue;
-      padding: 5px;
-      display: flex;
-      flex-direction: column; /* Stack logo and nav for mobile */
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-      z-index: 1000;
+        height: 8vh; /* Slightly taller header for better spacing */
+        padding: 8px;
     }
-  }
+
+    .left-head img {
+        width: 12vw; /* Slightly larger avatar */
+        max-height: 80px;
+    }
+
+    .navbar ul {
+        margin-right: 2rem; /* Reduce margin for compact layout */
+    }
+
+    a.nav-link {
+        font-size: 1.5rem; /* Smaller nav links */
+    }
+
+    main {
+        margin: 0 3rem 3rem 3rem; /* Reduced margins */
+    }
+
+    .welcome {
+        font-size: 1.1rem; /* Slightly smaller text */
+        height: auto; /* Allow content to flow naturally */
+    }
+
+    .gallery {
+        gap: 0.8rem; /* Tighter spacing */
+    }
+
+    .project-image {
+        height: 18vh; /* Slightly smaller images */
+    }
+
+    .project-title {
+        font-size: 1.3rem; /* Smaller project titles */
+    }
+
+    .social-links img {
+        width: 28px; /* Smaller social icons */
+        height: 28px;
+    }
+}
+
+/* Small screens: Phones (≤767px) */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        height: auto; /* Allow header to expand */
+        padding: 10px;
+        position: fixed; /* Keep fixed for scrolling */
+    }
+
+    .left-head img {
+        width: 20vw; /* Larger avatar for visibility */
+        max-height: 60px;
+        margin: 0 auto;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Vertical navbar */
+        margin: 0;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 8px 0; /* Vertical spacing for nav items */
+    }
+
+    a.nav-link {
+        font-size: 1.2rem; /* Smaller nav links */
+    }
+
+    main {
+        margin: 12rem 1rem 2rem 1rem; /* Adjust for fixed header, smaller side margins */
+    }
+
+    .welcome {
+        font-size: 1rem; /* Smaller text for readability */
+        height: auto; /* Allow content to flow */
+        text-align: justify; /* Better text flow on narrow screens */
+    }
+
+    .welcome h1 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+
+    .welcome h3 {
+        font-size: 1.2rem; /* Smaller subheading */
+    }
+
+    .target {
+        padding-top: 12rem; /* Extra padding to account for fixed header */
+    }
+
+    .gallery {
+        flex-direction: column; /* Stack gallery items vertically */
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .project-image {
+        height: 15vh; /* Smaller images for mobile */
+        max-width: 90%; /* Prevent overflow */
+        margin: 0 auto;
+    }
+
+    .project-title {
+        font-size: 1.1rem; /* Smaller titles */
+        padding: 0.5rem;
+    }
+
+    .social-links {
+        gap: 10px; /* Tighter spacing for icons */
+        padding: 15px;
+    }
+
+    .social-links img {
+        width: 24px; /* Smaller social icons */
+        height: 24px;
+    }
+}
+
+/* Extra small screens: Very small phones (≤576px) */
+@media screen and (max-width: 576px) {
+    .left-head img {
+        width: 25vw; /* Even larger avatar for tiny screens */
+        max-height: 50px;
+    }
+
+    a.nav-link {
+        font-size: 1rem; /* Even smaller nav links */
+    }
+
+    main {
+        margin: 14rem 0.5rem 1rem 0.5rem; /* Tighter margins */
+    }
+
+    .welcome {
+        font-size: 0.9rem; /* Tiny text for small screens */
+    }
+
+    .welcome h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome h3 {
+        font-size: 1rem;
+    }
+
+    .project-image {
+        height: 12vh; /* Very small images */
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+}
