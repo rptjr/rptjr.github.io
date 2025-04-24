@@ -6,7 +6,7 @@ Body {
     font-family: 'Roboto', sans-serif;
 }
 
-.welcome h1, .welcome h3, h2.st-header, .projects-header, a.nav-link, {
+.welcome h1, .welcome h3, h2.st-header, .projects-header, a.nav-link{
     font-family: 'Montserrat', sans-serif;
 }
 
