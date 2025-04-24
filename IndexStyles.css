@@ -1,22 +1,158 @@
-body {
-    width: 100%;
-    height: 100vh;
+/**Personal Portfolio Styles Sheet - will copy to IndexStyles.css**/
+
+Body {
+    background-color: aliceblue;
     margin: 0;
-    background-size: cover;
-    background-image: url("Construction.jpg");
-    background-color: rgba(222, 222, 222, 0.7); /* Semi-transparent black overlay */
-    background-blend-mode: overlay; /* Blends image with color */
-  }
+    font-family: 'Roboto', sans-serif;
+}
 
-  h1, h2 {
+.welcome h1, .welcome h3, h2.st-header, .projects-header, a.nav-link, {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: #333;
+    color: aliceblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1000; /* Ensures navbar stays above other content */
+}
+
+.left-head img {
+    display: block;
+    width: 10vw;
+    max-height: 95px;
+    box-sizing: border-box;
+    padding: 5px;
+    object-fit: contain;
+}
+
+.navbar {
+    height: 100%;
+    color: aliceblue;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 5rem;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+a.nav-link {
+    color: aliceblue;
+    font-size: 1.75rem;
+    text-decoration: none;
+}
+
+main {
+    margin: 0vh 5rem 5rem 5rem;
+}
+
+.welcome {
+    font-size: 1.25rem;
+    height: 80vh;
+}
+
+.target {
+    margin-top: 0rem;
+    padding-top: 8rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Align items at top for consistent appearance */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery-item {
+    text-align: center; /* Centers title under image */
+    flex: 0 0 auto; /* Prevent stretching, use content size */
+    scroll-margin-top: 7rem;
+}
+
+.project-link {
+    text-decoration: none; /* Keep link styling */
+    display: inline-block; /* Constrain to content width */
+}
+
+.project-image {
+    height: 20vh;
+    max-width: 100%; /* Prevents image overflow */
+    display: block; /* Ensures link wraps entire item */
+}
+
+.project-title {
+    background-color: #333;
+    color: aliceblue;
+    font-size: 1.5rem;
     text-align: center;
-  }
+    margin: 0.25rem 0 0.5rem 0;
+    text-wrap: pretty; /* Ensures clean wrapping */
+    width: inherit; /* Matches container width */
+    box-sizing: border-box; /* Include padding in width */
+}
 
-  p[id="turner-link"], a[id="turner-link"] {
-    text-align: center;
-    font-size: x-large;
-  }
+/* Optional: If b-banner adds spacing, ensure it doesn't break layout  */
+.b-banner {
+    display: inline;  /*Prevent banner from affecting width */
+}
 
-  a[id="turner-link"] {
-    color: #681d13;
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 32px;
+    transition: color 0.3s;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
+
+.social-links a:hover {
+    color: #0077B5; /* LinkedIn blue, adjust per platform */
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10vh; /* Slightly taller for mobile */
+      background-color: #333;
+      color: aliceblue;
+      padding: 5px;
+      display: flex;
+      flex-direction: column; /* Stack logo and nav for mobile */
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      z-index: 1000;
+    }
   }

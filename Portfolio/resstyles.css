@@ -1,0 +1,54 @@
+Body {
+    background-color: aliceblue;
+    margin: 5vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name, .address {
+    text-align: center;
+}
+
+.strong-ital-underline {
+    text-align: center;
+}
+
+.section-bar {
+    text-align: center;
+    border-bottom: 3px #1F3864;
+}
+
+hr {
+    background-color: #1F3864;
+    height: 2px;
+}
+
+.three-column-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20vw 0 20vw;
+    text-align: center;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    height: 1.2rem;
+    align-items: flex-end; /* Aligns items at the start vertically */
+    justify-content: space-between; /* Aligns items horizontally to the left */
+    text-align: left; /* Optional: aligns text within children */
+    margin-top: 1rem;
+}
+
+li {
+    width: 65vw;
+}
+
+h3.experience, p.dates, p.place {
+    margin-bottom: 0;
+}
+
+.place {
+    text-align: left;
+}
