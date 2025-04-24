@@ -138,6 +138,7 @@ main {
     color: #0077B5; /* LinkedIn blue, adjust per platform */
 }
 
+/**@media only screen and (max-width: 767px) {
 /* Medium screens: Laptops and tablets (768px–1199px) */
 @media screen and (max-width: 1199px) {
     header {
@@ -299,4 +300,5 @@ main {
     .project-title {
         font-size: 1rem;
     }
+  }**/
 }
