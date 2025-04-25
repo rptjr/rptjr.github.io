@@ -1,54 +1,268 @@
-Body {
+/* Normalize and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: aliceblue;
-    margin: 5vw;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 2rem 5vw;
+    color: #333;
 }
 
-.name, .address {
-    text-align: center;
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.strong-ital-underline {
+header {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
-.section-bar {
+.name {
+    font-size: 2.5rem;
+    color: #1F3864;
+}
+
+.address {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.section-title {
     text-align: center;
-    border-bottom: 3px #1F3864;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #1F3864;
 }
 
 hr {
     background-color: #1F3864;
     height: 2px;
+    border: none;
+    margin: 0.5rem 0 1rem;
 }
 
-.three-column-grid {
+.intro {
+    max-width: 80vw;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+}
+
+.expertise-grid {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 20vw 0 20vw;
+    max-width: 800px;
+    margin: 0 auto 2rem;
     text-align: center;
 }
 
-span {
+.expertise-grid > div {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.expertise-grid p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.job-entry {
+    margin-bottom: 1.5rem;
+}
+
+.job-header {
     display: flex;
-    flex-direction: row;
-    width: 75vw;
-    height: 1.2rem;
-    align-items: flex-end; /* Aligns items at the start vertically */
-    justify-content: space-between; /* Aligns items horizontally to the left */
-    text-align: left; /* Optional: aligns text within children */
-    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-size: 1.3rem;
+    color: #1F3864;
+}
+
+.dates {
+    font-size: 1rem;
+    color: #555;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    max-width: 800px;
 }
 
 li {
-    width: 65vw;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
-h3.experience, p.dates, p.place {
-    margin-bottom: 0;
+.education-entry, .cert-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    max-width: 80vw;
+}
+
+.degree, .cert-title {
+    font-size: 1.2rem;
+    color: #1F3864;
 }
 
 .place {
-    text-align: left;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Medium screens: Laptops and tablets (768px–1199px) */
+@media screen and (max-width: 1199px) {
+    body {
+        margin: 1.5rem 3vw;
+    }
+
+    .name {
+        font-size: 2.2rem;
+    }
+
+    .address {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .expertise-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expertise-grid > div {
+        margin: 0.5rem 0;
+    }
+
+    .job-title {
+        font-size: 1.2rem;
+    }
+
+    .dates, .place {
+        font-size: 0.9rem;
+    }
+
+    li {
+        font-size: 0.95rem;
+    }
+}
+
+/* Small screens: Phones (≤767px) */
+@media screen and (max-width: 767px) {
+    body {
+        margin: 1rem 2vw;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .address {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .intro {
+        font-size: 0.9rem;
+    }
+
+    .expertise-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 1rem;
+    }
+
+    .expertise-grid > div {
+        width: 100%;
+        margin: 0.3rem 0;
+    }
+
+    .expertise-grid p {
+        font-size: 0.9rem;
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-title {
+        font-size: 1.1rem;
+    }
+
+    .dates, .place {
+        font-size: 0.85rem;
+    }
+
+    ul {
+        margin-left: 1.5rem;
+    }
+
+    li {
+        font-size: 0.85rem;
+    }
+
+    .education-entry, .cert-entry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Extra small screens: Very small phones (≤576px) */
+@media screen and (max-width: 576px) {
+    body {
+        margin: 0.5rem 1vw;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .address {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .intro {
+        font-size: 0.85rem;
+    }
+
+    .expertise-grid p {
+        font-size: 0.85rem;
+    }
+
+    .job-title {
+        font-size: 1rem;
+    }
+
+    .dates, .place {
+        font-size: 0.8rem;
+    }
+
+    li {
+        font-size: 0.8rem;
+    }
 }
